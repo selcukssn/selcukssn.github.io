@@ -25,7 +25,7 @@ lanyard.onopen = () => {
         JSON.stringify({
             op: OPCODES.INIT,
             d: {
-                subscribe_to_id: "460867393141342218",
+                subscribe_to_id: "327528429614399489",
             },
         })
     );
@@ -55,7 +55,7 @@ lanyard.onmessage = ({ data }) => {
         if (parsedData.t === "INIT_STATE") {
             const user = parsedData.d;
             elements.status.style.background = statusColors[user.discord_status];
-            elements.avatar.src = `https://cdn.discordapp.com/avatars/460867393141342218/${user.discord_user.avatar}?size=128`;
+            elements.avatar.src = `https://cdn.discordapp.com/avatars/327528429614399489/${user.discord_user.avatar}?size=128`;
 
             let a = 0;
             console.log(user);
